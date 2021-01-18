@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+        <style>
+            body{
+                margin:0;
+                padding:0;
+            }
+            .logoSize{
+                width:100px;
+            }
+            .headerSection {
+                box-shadow: 0px 0px 19px 0px rgba(0,0,0,.1);
+                padding: 16px 20px;
+                border-radius: 5px;
+            }
+            .headerInner {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            .headerLeft {
+                display: flex;
+                align-items: center;
+            }
+            
+            .headerMiddle form input[type="text"] {
+                line-height: 27px;
+                height: 27px;
+                padding: 4px 7px;
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid #A8A8A8;
+                outline: 0;
+                font-size: 15px;
+            }
+            .headerMiddle form .searchItem .searchInputField input[type="text"]::placeholder{
+                color:#333;
+                opacity: .9;
+                font-size: 15px;
+            }
+            .searchInputField{
+                position: relative;
+            }
+            .searchIcon{
+                position: absolute;
+                right: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .searchIcon i {
+                font-weight: 500;
+                font-size: 14px;
+            }
+            .headerRight {
+                display: flex;
+                align-items: center;
+            }
+            .headerRight .singUp a {
+                display: inline-block;
+                color: #333;
+                font-size: 15px;
+                padding: 7px 17px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: normal;
+                font-family: monospace;
+                border: 1px solid #A8A8A8;
+            }
+            .headerRight .singUp i {
+                margin-left: 3px;
+                font-size: 13px;
+                color:#2B3361;
+            }
+            .headerRight .cartIcon a i {
+                display: inline-block;
+                color:#2B3361;
+                font-size: 18px;
+            }
+            .headerRight .cartIcon {
+                margin-left: 10px;
+            }
+            
+            /* for tablet Device */
+            
+        </style>
+    </head>
+    <body>
+        <section class="headerSection">
+            <div class="container">
+                <div class="headerInner">
+                    <div class="headerLeft">
+                        <div class="logo">
+                            <a href="#"><img class="logoSize" src="image/softLogo.png" alt=""></a>
+                        </div>
+                        <div class="categoryMenu">
+                            <!-- <a href="#">Menu</a> -->
+                        </div>
+                    </div>
+                    <div class="headerMiddle">
+                        <form action="#" method="POST">
+                            <div class="searchItem">
+                                <div class="searchInputField">
+                                    <input type="text" placeholder="Search Item" name="search">
+                                    <div class="searchIcon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="headerRight">
+                        <div class="singUp">
+                            <a href="#">Sign Up<i class="fas fa-angle-down"></i></a>
+                        </div>
+                        <div class="cartIcon">
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
